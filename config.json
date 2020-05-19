@@ -1,0 +1,6 @@
+{
+    "jpeg" : ["jpg", "JPG", "jpeg"],
+    "cr2" : ["cr2", "CR2"],
+    "png" : ["png", "PNG"],
+    "pdf" : ["pdf", "PDF"]
+}

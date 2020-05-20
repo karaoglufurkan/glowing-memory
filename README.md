@@ -21,9 +21,7 @@
 * In order to run the app, on terminal;
 
 ```console
-{
-    $ python main.py
-}
+$ python main.py
 ```
 
 ## Dependencies

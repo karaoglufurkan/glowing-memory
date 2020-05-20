@@ -19,8 +19,10 @@ class Categorization:
     def categorize(self,):
         for walk in os.walk(self.source_path):
             for file_name in walk[2]:
-                # copyfile(os.path.join(walk[0], file_name), os.path.join(self.target_path, self.find_folder_name(file_name), file_name))
-                move(os.path.join(walk[0], file_name), os.path.join(self.target_path, self.find_folder_name(file_name)))
+                copyfile(os.path.join(walk[0], file_name), os.path.join(self.target_path, self.find_folder_name(file_name), file_name))
+                # I intentionally didn't use move cause it could be dangerous when you specify your paths wrong.
+                # But here, you can see the commented line of code below to move files instead of copying:
+                # move(os.path.join(walk[0], file_name), os.path.join(self.target_path, self.find_folder_name(file_name)))
     def find_folder_name(self, file_name):
         for i in self.config:
             for j in self.config[i]:

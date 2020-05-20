@@ -4,3 +4,5 @@ cr2/
 pdf/
 png/
 get-pip.py
+source_folder_copy/
+__pycache__/
